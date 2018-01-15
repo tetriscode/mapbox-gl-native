@@ -20,7 +20,7 @@ class HeatmapProgram : public Program<
         attributes::a_pos>,
     gl::Uniforms<
         uniforms::u_matrix,
-        uniforms::u_extrude_scale>,
+        uniforms::heatmap::u_extrude_scale>,
     style::HeatmapPaintProperties>
 {
 public:

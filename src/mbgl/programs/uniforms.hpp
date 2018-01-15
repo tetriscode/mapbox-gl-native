@@ -41,6 +41,10 @@ MBGL_DEFINE_UNIFORM_SCALAR(float, u_weight);
 
 MBGL_DEFINE_UNIFORM_VECTOR(float, 2, u_extrude_scale);
 
+namespace heatmap {
+MBGL_DEFINE_UNIFORM_SCALAR(float, u_extrude_scale);
+}
+
 MBGL_DEFINE_UNIFORM_VECTOR(uint16_t, 2, u_pattern_tl_a);
 MBGL_DEFINE_UNIFORM_VECTOR(uint16_t, 2, u_pattern_br_a);
 MBGL_DEFINE_UNIFORM_VECTOR(uint16_t, 2, u_pattern_tl_b);
