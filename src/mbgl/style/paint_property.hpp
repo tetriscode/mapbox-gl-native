@@ -63,7 +63,7 @@ class HeatmapColor {
 public:
     using TransitionableType = Transitionable<HeatmapColorPropertyValue>;
     using UnevaluatedType = Transitioning<HeatmapColorPropertyValue>;
-    using EvaluatorType = NoopPropertyEvaluator;
+    using EvaluatorType = PropertyEvaluator<Color>;
     using PossiblyEvaluatedType = Color;
     using Type = Color;
     static constexpr bool IsDataDriven = false;
