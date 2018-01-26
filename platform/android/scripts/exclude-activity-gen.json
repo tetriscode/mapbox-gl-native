@@ -27,5 +27,6 @@
   "QueryRenderedFeaturesBoxHighlightActivity",
   "MultiMapActivity",
   "MapInDialogActivity",
+  "TextureViewTransparentBackgroundActivity",
   "SimpleMapActivity"
 ]
