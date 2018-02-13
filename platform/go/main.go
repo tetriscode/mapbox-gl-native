@@ -1,14 +1,18 @@
 package main
 
 /*
+#cgo LDFLAGS: -L/usr/local/Cellar/boost/1.66.0/lib
 #include <stdlib.h>
 #include "mb.h"
 */
 import "C"
-import "unsafe"
+import "log"
 
 func main() {
-
-	unsafe.Pointer
-
+	log.Print(C.doit())
+	log.Print(C.doit())
+	log.Print(C.doit())
+	log.Print(C.doit())
+	log.Print(C.doit())
+	log.Print(C.doit())
 }
