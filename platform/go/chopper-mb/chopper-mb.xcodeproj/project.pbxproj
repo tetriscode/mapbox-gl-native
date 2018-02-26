@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5646332C2041E3CE00D6E811 /* libmbgl-core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633242041E20700D6E811 /* libmbgl-core.a */; };
+		5646332D2041E3CE00D6E811 /* libmbgl-filesource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633252041E20700D6E811 /* libmbgl-filesource.a */; };
+		5646332E2041E3CE00D6E811 /* libmbgl-loop-darwin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633262041E20700D6E811 /* libmbgl-loop-darwin.a */; };
+		564633302041E6FC00D6E811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5646332F2041E6FC00D6E811 /* Foundation.framework */; };
+		564633322041E74F00D6E811 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633312041E74F00D6E811 /* CoreImage.framework */; };
+		564633342041E78100D6E811 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633332041E78100D6E811 /* OpenGL.framework */; };
+		564633362041E7B300D6E811 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633352041E7B300D6E811 /* CoreGraphics.framework */; };
+		564633382041E7DB00D6E811 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633372041E7DB00D6E811 /* ImageIO.framework */; };
+		564633392041E82D00D6E811 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5646332A2041E32600D6E811 /* Mapbox.framework */; };
 		56C24FB6203493C500F20C3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56C24FB5203493C500F20C3F /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +32,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		564633222041E15900D6E811 /* mapbox_gl_native.node */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = mapbox_gl_native.node; path = ../../../lib/mapbox_gl_native.node; sourceTree = "<group>"; };
+		564633242041E20700D6E811 /* libmbgl-core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmbgl-core.a"; path = "../../../build/macos/Debug/libmbgl-core.a"; sourceTree = "<group>"; };
+		564633252041E20700D6E811 /* libmbgl-filesource.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmbgl-filesource.a"; path = "../../../build/macos/Debug/libmbgl-filesource.a"; sourceTree = "<group>"; };
+		564633262041E20700D6E811 /* libmbgl-loop-darwin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmbgl-loop-darwin.a"; path = "../../../build/macos/Debug/libmbgl-loop-darwin.a"; sourceTree = "<group>"; };
+		5646332A2041E32600D6E811 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = ../../macos/cmake/Debug/Mapbox.framework; sourceTree = "<group>"; };
+		5646332F2041E6FC00D6E811 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		564633312041E74F00D6E811 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		564633332041E78100D6E811 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		564633352041E7B300D6E811 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		564633372041E7DB00D6E811 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		56C24FB2203493C500F20C3F /* chopper-mb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "chopper-mb"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C24FB5203493C500F20C3F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +51,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564633392041E82D00D6E811 /* Mapbox.framework in Frameworks */,
+				564633382041E7DB00D6E811 /* ImageIO.framework in Frameworks */,
+				564633362041E7B300D6E811 /* CoreGraphics.framework in Frameworks */,
+				564633342041E78100D6E811 /* OpenGL.framework in Frameworks */,
+				564633302041E6FC00D6E811 /* Foundation.framework in Frameworks */,
+				564633322041E74F00D6E811 /* CoreImage.framework in Frameworks */,
+				5646332C2041E3CE00D6E811 /* libmbgl-core.a in Frameworks */,
+				5646332D2041E3CE00D6E811 /* libmbgl-filesource.a in Frameworks */,
+				5646332E2041E3CE00D6E811 /* libmbgl-loop-darwin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +94,16 @@
 		56C24FBC2034940500F20C3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				564633372041E7DB00D6E811 /* ImageIO.framework */,
+				564633352041E7B300D6E811 /* CoreGraphics.framework */,
+				564633332041E78100D6E811 /* OpenGL.framework */,
+				564633312041E74F00D6E811 /* CoreImage.framework */,
+				5646332F2041E6FC00D6E811 /* Foundation.framework */,
+				5646332A2041E32600D6E811 /* Mapbox.framework */,
+				564633242041E20700D6E811 /* libmbgl-core.a */,
+				564633252041E20700D6E811 /* libmbgl-filesource.a */,
+				564633262041E20700D6E811 /* libmbgl-loop-darwin.a */,
+				564633222041E15900D6E811 /* mapbox_gl_native.node */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,40 +278,50 @@
 		56C24FBA203493C500F20C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82EPDLMXNS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../macos/cmake/Debug",
 				);
 				HEADER_SEARCH_PATHS = (
-					"/Users/wesr/Development/boundless/mapbox-gl-native/include",
-					"/Users/wesr/Development/boundless/mapbox-gl-native/platform/default",
+					"$(mbgl_core_INCLUDE_DIRECTORIES)",
+					"$(mbgl_filesource_INCLUDE_DIRECTORIES)",
 				);
-				LIBRARY_SEARCH_PATHS = "/Users/wesr/Development/boundless/mapbox-gl-native/lib";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../build/macos/Debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				mbgl_core_INCLUDE_DIRECTORIES = "\"/Users/wesr/Development/boundless/mapbox-gl-native/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/geometry/0.9.2/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/variant/1.1.4/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/geojson/0.4.2/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/polylabel/1.0.3/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/platform/darwin\" \"/Users/wesr/Development/boundless/mapbox-gl-native/platform/default\"";
+				mbgl_core_LINK_LIBRARIES = "\"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/osx-x86_64/icu/58.1-min-size/lib/libicuuc.a\" \"-lz\" \"-framework\" \"Foundation\" \"-framework\" \"CoreText\" \"-framework\" \"CoreGraphics\" \"-framework\" \"OpenGL\" \"-framework\" \"ImageIO\" \"-framework\" \"CoreServices\" \"-framework\" \"SystemConfiguration\"";
+				mbgl_filesource_INCLUDE_DIRECTORIES = "\"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/geometry/0.9.2/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/variant/1.1.4/include\"";
+				mbgl_filesource_LINK_LIBRARIES = "\"-lsqlite3\" \"-framework\" \"Foundation\"";
 			};
 			name = Debug;
 		};
 		56C24FBB203493C500F20C3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82EPDLMXNS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../macos/cmake/Debug",
 				);
 				HEADER_SEARCH_PATHS = (
-					"/Users/wesr/Development/boundless/mapbox-gl-native/include",
-					"/Users/wesr/Development/boundless/mapbox-gl-native/platform/default",
+					"$(mbgl_core_INCLUDE_DIRECTORIES)",
+					"$(mbgl_filesource_INCLUDE_DIRECTORIES)",
 				);
-				LIBRARY_SEARCH_PATHS = "/Users/wesr/Development/boundless/mapbox-gl-native/lib";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../build/macos/Debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				mbgl_core_INCLUDE_DIRECTORIES = "\"/Users/wesr/Development/boundless/mapbox-gl-native/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/geometry/0.9.2/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/variant/1.1.4/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/geojson/0.4.2/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/polylabel/1.0.3/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/platform/darwin\" \"/Users/wesr/Development/boundless/mapbox-gl-native/platform/default\"";
+				mbgl_core_LINK_LIBRARIES = "\"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/osx-x86_64/icu/58.1-min-size/lib/libicuuc.a\" \"-lz\" \"-framework\" \"Foundation\" \"-framework\" \"CoreText\" \"-framework\" \"CoreGraphics\" \"-framework\" \"OpenGL\" \"-framework\" \"ImageIO\" \"-framework\" \"CoreServices\" \"-framework\" \"SystemConfiguration\"";
+				mbgl_filesource_INCLUDE_DIRECTORIES = "\"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/geometry/0.9.2/include\" \"/Users/wesr/Development/boundless/mapbox-gl-native/mason_packages/headers/variant/1.1.4/include\"";
+				mbgl_filesource_LINK_LIBRARIES = "\"-lsqlite3\" \"-framework\" \"Foundation\"";
 			};
 			name = Release;
 		};
