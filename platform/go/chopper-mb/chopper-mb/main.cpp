@@ -16,9 +16,10 @@
 int doIt(mbgl::FileSource *fileSource) {
     std::unique_ptr<mbgl::Map> mapFront;
   std::unique_ptr<mbgl::Map> mapBack;
-  std::unique_ptr<mbgl::HeadlessFrontend> frontend;
+  mbgl::HeadlessFrontend *frontend;
   std::shared_ptr<mbgl::ThreadPool> scheduler = mbgl::sharedThreadPool();
-  frontend = mbgl::HeadlessFrontend(mbgl::Size{ 256, 256 },1.0f,fileSource,scheduler);
+  float a = 1.0f;
+  frontend = new mbgl::HeadlessFrontend({256,256},a,*fileSource,*scheduler);
 //  std::unique_ptr<mbgl::HeadlessBackend> backend;
 //    backend = std::make_unique<mbgl::HeadlessBackend>(mbgl::Size{256, 256});
 //  mapFront = std::make_unique<mbgl::Map>(*frontend,,frontend->getSize(),1.0f,fileSource,scheduler,mbgl::MapMode::Tile);
@@ -27,8 +28,5 @@ int doIt(mbgl::FileSource *fileSource) {
 }
 
 int main(int argc, const char * argv[]) {
-
-  // insert code here...
-  std::cout << "hello world";
   return 0;
 }
