@@ -16,6 +16,9 @@
 		564633362041E7B300D6E811 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633352041E7B300D6E811 /* CoreGraphics.framework */; };
 		564633382041E7DB00D6E811 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633372041E7DB00D6E811 /* ImageIO.framework */; };
 		564633392041E82D00D6E811 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5646332A2041E32600D6E811 /* Mapbox.framework */; };
+		5646333B2044A0B800D6E811 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5646333A2044A0B800D6E811 /* CoreText.framework */; };
+		5646333F2044B29B00D6E811 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5646333E2044B29B00D6E811 /* libsqlite3.tbd */; };
+		564633452044D31C00D6E811 /* libz.1.2.11.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 564633442044D31C00D6E811 /* libz.1.2.11.tbd */; };
 		56C24FB6203493C500F20C3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56C24FB5203493C500F20C3F /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +26,8 @@
 		56C24FB0203493C500F20C3F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 10;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -42,6 +45,12 @@
 		564633332041E78100D6E811 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		564633352041E7B300D6E811 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		564633372041E7DB00D6E811 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		5646333A2044A0B800D6E811 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5646333C2044A11B00D6E811 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = ../../macos/cmake/Debug/Mapbox.framework; sourceTree = "<group>"; };
+		5646333E2044B29B00D6E811 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		564633402044B32B00D6E811 /* liblzma.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblzma.tbd; path = usr/lib/liblzma.tbd; sourceTree = SDKROOT; };
+		564633422044B3FC00D6E811 /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
+		564633442044D31C00D6E811 /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = usr/lib/libz.1.2.11.tbd; sourceTree = SDKROOT; };
 		56C24FB2203493C500F20C3F /* chopper-mb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "chopper-mb"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C24FB5203493C500F20C3F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,12 +60,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564633452044D31C00D6E811 /* libz.1.2.11.tbd in Frameworks */,
 				564633392041E82D00D6E811 /* Mapbox.framework in Frameworks */,
+				5646333B2044A0B800D6E811 /* CoreText.framework in Frameworks */,
 				564633382041E7DB00D6E811 /* ImageIO.framework in Frameworks */,
 				564633362041E7B300D6E811 /* CoreGraphics.framework in Frameworks */,
 				564633342041E78100D6E811 /* OpenGL.framework in Frameworks */,
 				564633302041E6FC00D6E811 /* Foundation.framework in Frameworks */,
 				564633322041E74F00D6E811 /* CoreImage.framework in Frameworks */,
+				5646333F2044B29B00D6E811 /* libsqlite3.tbd in Frameworks */,
 				5646332C2041E3CE00D6E811 /* libmbgl-core.a in Frameworks */,
 				5646332D2041E3CE00D6E811 /* libmbgl-filesource.a in Frameworks */,
 				5646332E2041E3CE00D6E811 /* libmbgl-loop-darwin.a in Frameworks */,
@@ -69,6 +81,7 @@
 		56C24FA9203493C500F20C3F = {
 			isa = PBXGroup;
 			children = (
+				5646333C2044A11B00D6E811 /* Mapbox.framework */,
 				56C24FB4203493C500F20C3F /* chopper-mb */,
 				56C24FB3203493C500F20C3F /* Products */,
 				56C24FBC2034940500F20C3F /* Frameworks */,
@@ -94,6 +107,11 @@
 		56C24FBC2034940500F20C3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				564633442044D31C00D6E811 /* libz.1.2.11.tbd */,
+				564633422044B3FC00D6E811 /* libcompression.tbd */,
+				564633402044B32B00D6E811 /* liblzma.tbd */,
+				5646333E2044B29B00D6E811 /* libsqlite3.tbd */,
+				5646333A2044A0B800D6E811 /* CoreText.framework */,
 				564633372041E7DB00D6E811 /* ImageIO.framework */,
 				564633352041E7B300D6E811 /* CoreGraphics.framework */,
 				564633332041E78100D6E811 /* OpenGL.framework */,
