@@ -29,14 +29,25 @@ void term(int signum)
 {
     done = 1;
 }
+
+void foo() {
+  mbgl::FileSource *fileSource = new mbgl::DefaultFileSource("/tmp/mbgl-cache.db",".");
+  std::shared_ptr<mbgl::ThreadPool> scheduler = mbgl::sharedThreadPool();
+  float pixelRatio {1};
+  mbgl::Renderer *rendererBackend = new mbgl::RendererBackend();
+  mbgl::RendererFrontend *rendererFrontend = new mbgl::RendererFrontend(
+  mbgl::Renderer *renderer = new mbgl::Renderer(rendererBackend, pixelRatio, *fileSource, *scheduler);
+}
+
 void doIt(std::shared_ptr<mbgl::ThreadPool> scheduler, mbgl::FileSource *fileSource, mbgl::PremultipliedImage *img) {
     std::unique_ptr<mbgl::Map> mapFront;
     mbgl::HeadlessFrontend *frontend;
-    float pixelRatio = 1.0f;
+    float pixelRatio {1};
     mbgl::HeadlessBackend *backend;
     backend = new mbgl::HeadlessBackend({256,256});
     frontend = new mbgl::HeadlessFrontend({256,256},pixelRatio,*fileSource,*scheduler);
     mapFront = std::make_unique<mbgl::Map>(*frontend, mbgl::MapObserver::nullObserver(),frontend->getSize(),1.0f,*fileSource,*scheduler,mbgl::MapMode::Tile);
+
     mbgl::CameraOptions camera;
     camera.center = mbgl::LatLng{0,0};
     camera.zoom = 0;
@@ -57,7 +68,8 @@ void doIt(std::shared_ptr<mbgl::ThreadPool> scheduler, mbgl::FileSource *fileSou
     frontend->setSize({512,512});
     mapFront->setSize({512,512});
     bool done = false;
-    
+
+
     mapFront->renderStill([&](const std::exception_ptr eptr) {
         if (eptr) {
             err = std::move(eptr);
